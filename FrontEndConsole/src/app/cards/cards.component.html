@@ -1,0 +1,15 @@
+<div class="w-50 mx-auto">
+
+  <div class="row p-4">
+
+    <div class="mb-3 p-2" *ngFor="let item of consoles"  >
+
+
+     <app-little-card  [console]="item"  (delete)="deleteConsole($event)"  ></app-little-card>
+
+
+    </div>
+
+  </div>
+
+</div>

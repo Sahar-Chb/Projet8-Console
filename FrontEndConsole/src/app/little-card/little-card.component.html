@@ -1,0 +1,31 @@
+
+<!-- child -->
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]="'http://127.0.0.1:3002/getimage/'+console.image" alt="..." class="w-100">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{console.name}}</h5>
+        <p class="card-text lead">{{console.description}}</p>
+        <p class="card-text fw-bold">Âge:{{console.age}}</p>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <button (click)="deleteFromChild(console._id)" class="btn btn-danger form-control">Delete</button>
+          </div>
+
+          <div class="col-lg-6">
+            <button class="btn btn-warning form-control" [routerLink]="['/update',console._id] ">Edit</button>
+          </div>
+
+        </div>
+
+      </div>
+      
+        
+    </div>
+  </div>
+</div>

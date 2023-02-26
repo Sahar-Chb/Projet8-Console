@@ -1,0 +1,31 @@
+<div class="w-50 mx-auto">
+
+  <div class="row mb-5">
+    <div class="col-lg-6">
+      <input [(ngModel)]="console.name" type="text" name="" id="" placeholder="console" class="form-control m-2">
+    </div>
+
+
+    <div class="col-lg-6">
+      <input [(ngModel)]="console.age" type="text" name="" id="" placeholder="age" class="form-control m-2">
+    </div>
+
+
+    <div class="col-lg-12">
+      <textarea [(ngModel)]="console.description" name="" id="" cols="30" rows="3" class="form-control m-2">Description</textarea>
+    </div>
+
+
+    <div class="col-lg-12">
+      <input (change)="selectImage($event)" type="file" name="" id="" placeholder="image" class="form-control m-2">
+    </div>
+
+
+    <div class="col-lg-12">
+      <button (click)="create()" class="btn btn-warning text-light text-center fw-bold form-control m-2">Create</button>
+    </div>
+   
+  </div>
+
+</div>
+

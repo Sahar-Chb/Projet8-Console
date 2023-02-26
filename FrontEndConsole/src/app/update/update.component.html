@@ -1,0 +1,23 @@
+<div class="row mb-5" *ngIf="console">
+
+  <div class="col-lg-3 p-3">
+    <input [(ngModel)]="console.name" type="text" placeholder="console" class="form-control">
+  </div>
+
+  <div class="col-lg-3 p-3">
+    <input [(ngModel)]="console.age" type="text" name="" id="" placeholder="age" class="form-control">
+  </div>
+
+  <div class="col-lg-3 p-3">
+    <input [(ngModel)]="console.description" type="text" name="" id="" placeholder="description" class="form-control">
+  </div>
+
+  <div class="col-lg-3 p-3">
+    <input [(ngModel)]="console.image" type="text" name="" id="" placeholder="image" class="form-control">
+  </div>
+
+  <div class="col-lg-3 p-3">
+    <button class="btn btn-warning text-light form-control button" (click)="save()">Save</button>
+  </div>
+
+</div>
